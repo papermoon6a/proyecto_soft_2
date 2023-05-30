@@ -1,0 +1,13 @@
+/* This is purely for the demo */
+.container-video {
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.container-video video{
+  max-width: 800px;
+}
+.plyr {
+  border-radius: 4px;
+  margin-bottom: 15px;
+}

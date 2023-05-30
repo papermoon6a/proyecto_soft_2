@@ -1,0 +1,30 @@
+
+.login__Centrado{
+    position: relative;
+}
+.modalContenidoo {
+    position: absolute;
+    width: 30%;
+    background: rgb(245, 245, 245);
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+    padding: 10px;
+    left: 30%;
+    top: 40px;
+}
+
+
+.div-logo img{
+    width: 170px;
+
+}
+
+.modalContenidooo {
+    position: absolute;
+    width: 30%;
+    background: rgb(245, 245, 245);
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+    padding: 10px;
+    left: 30%;
+}

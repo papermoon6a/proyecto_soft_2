@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informatica3D</title>
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/menu-movil.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/chat.css">
+    <link rel="stylesheet" href="css/carrusel.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/phone.css" media="screen  and (min-width: 0px)">
+    <link rel="stylesheet" href="css/tablet.css" media="screen and (min-width:480px)">
+    <link rel="stylesheet" href="css/desktop.css" media="screen and (min-width:768px)">
+    <link rel="stylesheet" href="css/credenciales.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container container">
+            <div class="header-nav-top">
+                <div class="info-nav">
+                    <div>
+                        <img src="img/icons/email.png" alt="correo" title="correo">
+                        <p class="p-header">example@example.com</p>
+                    </div>
+                    <div>
+                        <img src="img/icons/telephono.png" alt="phone" title="telephono">
+                        <p class="p-header">+505 0000-0000</p>
+                    </div>
+                    <div>
+                        <img src="img/icons/live-chat 1.png" alt="chat" title="chat">
+                    </div>
+                </div>
+                <div class="redes-nav">
+                    <nav class="redes-nav-header">
+                        <a href="https://www.facebook.com/sevasaonline/"><img class="red-footer"
+                                src="img/icons/facebook.png" alt="Icono facebook"></a>
+                        <a href="https://www.instagram.com/sevasaonline/?hl=es"><img class="red-footer"
+                                src="img/icons/instagram.png" alt="Icono facebook"></a>
+                        <a href="https://twitter.com/amd"><img class="red-footer" src="img/icons/twitter.png"
+                                alt="Icono facebook"></a>
+                    </nav>
+                </div>
+            </div>
+            <div class="header-nav-center">
+                <div class="div-logo">
+                    <a href="index.html">
+                        <img src="img/Logo-normal.png" alt="LogoTipo">
+                    </a>
+                </div>
+                <div class="div-search">
+                    <div class="barra">
+                        <input type="text" placeholder="buscar">
+                        <button type="submit">
+                            <img src="img/icons/Search-white.png" alt="buscar">
+                        </button>
+                    </div>
+                    <div class="div-right-center">
+                        <div>
+                            <a href="listaDeseos.html"><img src="img/icons/Me gusta.png" alt="megusta"
+                                    title="Lista de Productos gustados"></a>
+                        </div>
+                        <div>
+                            <a href="carroCompras.html"><img src="img/icons/cart.png" alt="ShoppCart"
+                                    title="carro de compras"></a>
+                        </div>
+                    </div>
+                    <div class="div-account-header-container">
+                        <div class="nav-right-1">
+                            <a href="#" class="enlace-opciones-mp" onclick="desplegar()">
+                                <h2>Mi cuenta</h2>
+                                <div class="menu-desplegable ocultar">
+                                    <a href="#modalLogin" class="menu-links">Iniciar Sesion</a>
+                                    <a href="#modalRegistro" class="menu-links">Registrarse</a>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="phone-header-center">
+                <div class="div-logo">
+                    <a href="index.html">
+                        <img src="img/Logo-low.png" alt="logo">
+                    </a>
+                </div>
+                <div class="phone-header-data ">
+                    <div class="icon-div">
+                        <img src="img/icons/search.png " alt="buscar " title="busqueda">
+                    </div>
+                    <nav class="main-nav hamburger-menu">
+                        <input id="menu__toggle" type="checkbox" />
+                        <label class="menu__btn" for="menu__toggle">
+                            <span></span>
+                        </label>
+                        <ul class="menu__box">
+                            <div class="menu_box-img">
+                                <img src="img/Logo-normal.png" alt="logo">
+                            </div>
+                            <div class="menu_box-content">
+                                <p>Generales</p>
+                                <li><a class="menu__item" href="index.html">Inicio</a></li>
+                                <li><a class="menu__item" href="categoria.html">Catalogo</a></li>
+                                <li><a class="menu__item" href="blog.html">Blog</a></li>
+                                <li><a class="menu__item" href="acercade.html">Acerca De</a></li>
+                                <li><a class="menu__item" href="contacto.html">Contacto</a></li>
+                                <p>Acciones</p>
+                                <li><a class="menu__item" href="listaDeseos.html">Lista de Deseos</a></li>
+                                <li><a class="menu__item" href="carroCompras.html">Carro de Compras</a></li>
+                                <p>Cuenta</p>
+                                <li><a class="menu__item" href="#modalLogin">Inicio Sesion</a></li>
+                                <li><a class="menu__item" href="#modalRegistro">Registrarse</a></li>
+                            </div>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="header-nav-bottom">
+            <nav class="nav-header">
+                <ul>
+                    <li><a href="index.html" class="cool-link ">inicio</a></li>
+                    <li><a href="categoria.html" class="cool-link ">Catalogo</a></li>
+                    <li><a href="blog.html" class="cool-link ">Blog</a></li>
+                    <li><a href="acercade.html" class="cool-link ">Acerca de</a></li>
+                    <li><a href="contacto.html" class="cool-link">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!--SECCION NUMERO 1-->
+        <section class="container">
+            <div class="section-banner">
+                <div class="banner-info">
+                    <img src="img/banners/banner-1.jpg" alt="Banner de la pagina">
+                </div>
+                <div class="card-info">
+                    <div>
+                        <h3>Arma tu pc Gamer</h3>
+                        <p>Busca tu pc Ideal aqui</p>
+                    </div>
+                    <div>
+                        <a class="btn-primary" href="categoria.html">Compra</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--SECCION NUMERO 2-->
+        <section class="container">
+            <div class="servicios-container">
+                <div class="servicios-container-item">
+                    <img src="img/icons/Envio.png" alt="Envio icon" title="Envios">
+                    <div>
+                        <div>
+                            <h3>Envio Gratis</h3>
+                            <p>Pedidos mayores a US$100</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="servicios-container-item">
+                    <img src="img/icons/Reembolsos.png" alt="Icono de rembolsos" title="rembolsos">
+                    <div>
+                        <div>
+                            <h3>Rembolsos</h3>
+                            <p>Plazo de 30 dias</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="servicios-container-item">
+                    <img src="img/icons/PagoSeguro.png" alt="Icono de pago seguro" title="Pago Seguro">
+                    <div>
+                        <div>
+                            <h3>Pago Seguro</h3>
+                            <p>Pago Seguro</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="servicios-container-item">
+                    <img src="img/icons/ChatEnLinea.png" alt="Chat en linea" title="Chat en linea">
+                    <div>
+                        <div>
+                            <h3>Chat en linea</h3>
+                            <p>Servicio 24/7</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--DIVIDER-->
+        <section class="content-breakpoints">
+            <div class="divider-content container">
+                <h2 class="subtitulo">Ofertas</h2>
+                <div class="linea">
+                    <div class="linea-azul"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="carrusel-global-container">
+                <div id="content">
+                    <div id="carrusel">
+                        <a href="#" class="left-arrow arrow-contain"><img src="img/icons/left-arrow.png" /></a>
+                        <a href="#" class="right-arrow arrow-contain"><img src="img/icons/right-arrow.png" /></a>
+                        <div class="carrusel">
+                            <div class="card-product" id="product_0">
+                                <div class="card-header">
+                                    <div class="descuento-header">
+                                        <h3>25% DESC</h3>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="body-card-img">
+                                        <img src="img/mouse 1.png" alt="producto img">
+                                    </div>
+                                    <div class="body-card-action">
+                                        <div><img src="img/icons/heart 2.png" alt="Agregar a la lista de deseos"></div>
+                                        <div><img src="img/icons/img eye 2.png" alt="Ver detalles"></div>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="card-footer-head">
+                                        <div><img src="img/icons/estrellas 2.jpg" alt=""></div>
+                                        <div>
+                                            <p class="button-stock">INSTOCK</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer-main">
+                                        <h3>Lorem ipsum dolor sit</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quidem
+                                            quibusdam sequi un</p>
+                                    </div>
+                                    <div class="card-footer-footer">
+                                        <a href="detalle.html">DETALLES</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-product" id="product_1">
+                                <div class="card-header">
+                                    <div class="descuento-header">
+                                        <h3>25% DESC</h3>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="body-card-img">
+                                        <img src="img/mouse 1.png" alt="producto img">
+                                    </div>
+                                    <div class="body-card-action">
+                                        <div><img src="img/icons/heart 2.png" alt="Agregar a la lista de deseos"></div>
+                                        <div><img src="img/icons/img eye 2.png" alt="Ver detalles"></div>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="card-footer-head">
+                                        <div><img src="img/icons/estrellas 2.jpg" alt=""></div>
+                                        <div>
+                                            <p class="button-stock">INSTOCK</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer-main">
+                                        <h3>Lorem ipsum dolor sit</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quidem
+                                            quibusdam sequi un</p>
+                                    </div>
+                                    <div class="card-footer-footer">
+                                        <a href="detalle.html">DETALLES</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-product" id="product_2">
+                                <div class="card-header">
+                                    <div class="descuento-header">
+                                        <h3>25% DESC</h3>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="body-card-img">
+                                        <img src="img/mouse 1.png" alt="producto img">
+                                    </div>
+                                    <div class="body-card-action">
+                                        <div><img src="img/icons/heart 2.png" alt="Agregar a la lista de deseos"></div>
+                                        <div><img src="img/icons/img eye 2.png" alt="Ver detalles"></div>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="card-footer-head">
+                                        <div><img src="img/icons/estrellas 2.jpg" alt=""></div>
+                                        <div>
+                                            <p class="button-stock">INSTOCK</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer-main">
+                                        <h3>Lorem ipsum dolor sit</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quidem
+                                            quibusdam sequi un</p>
+                                    </div>
+                                    <div class="card-footer-footer">
+                                        <a href="detalle.html">DETALLES</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-product" id="product_3">
+                                <div class="card-header">
+                                    <div class="descuento-header">
+                                        <h3>25% DESC</h3>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="body-card-img">
+                                        <img src="img/mouse 1.png" alt="producto img">
+                                    </div>
+                                    <div class="body-card-action">
+                                        <div><img src="img/icons/heart 2.png" alt="Agregar a la lista de deseos"></div>
+                                        <div><img src="img/icons/img eye 2.png" alt="Ver detalles"></div>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="card-footer-head">
+                                        <div><img src="img/icons/estrellas 2.jpg" alt=""></div>
+                                        <div>
+                                            <p class="button-stock">INSTOCK</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer-main">
+                                        <h3>Lorem ipsum dolor sit</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quidem
+                                            quibusdam sequi un</p>
+                                    </div>
+                                    <div class="card-footer-footer">
+                                        <a href="detalle.html">DETALLES</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-product" id="product_4">
+                                <div class="card-header">
+                                    <div class="descuento-header">
+                                        <h3>25% DESC</h3>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="body-card-img">
+                                        <img src="img/mouse 1.png" alt="producto img">
+                                    </div>
+                                    <div class="body-card-action">
+                                        <div><img src="img/icons/heart 2.png" alt="Agregar a la lista de deseos"></div>
+                                        <div><img src="img/icons/img eye 2.png" alt="Ver detalles"></div>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="card-footer-head">
+                                        <div><img src="img/icons/estrellas 2.jpg" alt=""></div>
+                                        <div>
+                                            <p class="button-stock">INSTOCK</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer-main">
+                                        <h3>Lorem ipsum dolor sit</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quidem
+                                            quibusdam sequi un</p>
+                                    </div>
+                                    <div class="card-footer-footer">
+                                        <a href="detalle.html">DETALLES</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-product" id="product_5">
+                                <div class="card-header">
+                                    <div class="descuento-header">
+                                        <h3>25% DESC</h3>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="body-card-img">
+                                        <img src="img/mouse 1.png" alt="producto img">
+                                    </div>
+                                    <div class="body-card-action">
+                                        <div><img src="img/icons/heart 2.png" alt="Agregar a la lista de deseos"></div>
+                                        <div><img src="img/icons/img eye 2.png" alt="Ver detalles"></div>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="card-footer-head">
+                                        <div><img src="img/icons/estrellas 2.jpg" alt=""></div>
+                                        <div>
+                                            <p class="button-stock">INSTOCK</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer-main">
+                                        <h3>Lorem ipsum dolor sit</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quidem
+                                            quibusdam sequi un</p>
+                                    </div>
+                                    <div class="card-footer-footer">
+                                        <a href="detalle.html">DETALLES</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--SECCION DE NOTEBOOKS-->
+        <section class="container">
+            <div class="notebook-section">
+                <div class="fondo-panel fondo-panel--notebook">
+                    <div class="data-info-panel">
+                        <h3>ARMAR TU PC GAMER?</h3>
+                        <p>busca tu pc ideal aqui!!!</p>
+                    </div>
+                    <div class="btn-info-panel">
+                        <a class="btn-primary" href="categoria.html">Ver mas</a>
+                    </div>
+                </div>
+                <div class="fondo-panel fondo-panel--desktop">
+                    <div class="data-info-panel">
+                        <h3>ARMAR TU PC GAMER?</h3>
+                        <p>busca tu pc ideal aqui!!!</p>
+                    </div>
+                    <div class="btn-info-panel">
+                        <a class="btn-primary" href="categoria.html">Ver mas</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--DIVIDER-->
+        <section class="content-breakpoints">
+            <div class="divider-content container">
+                <h2 class="subtitulo">Computadoras</h2>
+                <div class="linea">
+                    <div class="linea-azul"></div>
+                </div>
+            </div>
+        </section>
+
+        <!--SECCION DE -->
+        <section class="container">
+            <div class="section-pc">
+                <div class="fondo-panel fondo-panel--pc">
+                    <div class="data-info-panel">
+                        <h3>ARMAR TU PC GAMER?</h3>
+                        <p>busca tu pc ideal aqui!!!</p>
+                    </div>
+                    <div class="btn-info-panel">
+                        <a class="btn-primary" href="categoria.html">Ver mas</a>
+                    </div>
+                </div>
+                <!--AGREGAR CARDS-->
+                <div class="card-product" id="product_0">
+                    <div class="card-header">
+                        <div class="descuento-header">
+                            <h3>25% DESC</h3>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="body-card-img">
+                            <img src="img/mouse 1.png" alt="producto img">
+                        </div>
+                        <div class="body-card-action">
+                            <div><img src="img/icons/heart 2.png" alt="Agregar a la lista de deseos"></div>
+                            <div><img src="img/icons/img eye 2.png" alt="Ver detalles"></div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="card-footer-head">
+                            <div><img src="img/icons/estrellas 2.jpg" alt=""></div>
+                            <div>
+                                <p class="button-stock">INSTOCK</p>
+                            </div>
+                        </div>
+                        <div class="card-footer-main">
+                            <h3>Lorem ipsum dolor sit</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quidem quibusdam sequi un
+                            </p>
+                        </div>
+                        <div class="card-footer-footer">
+                            <a href="detalle.html">DETALLES</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-product" id="product_1">
+                    <div class="card-header">
+                        <div class="descuento-header">
+                            <h3>25% DESC</h3>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="body-card-img">
+                            <img src="img/mouse 1.png" alt="producto img">
+                        </div>
+                        <div class="body-card-action">
+                            <div><img src="img/icons/heart 2.png" alt="Agregar a la lista de deseos"></div>
+                            <div><img src="img/icons/img eye 2.png" alt="Ver detalles"></div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="card-footer-head">
+                            <div><img src="img/icons/estrellas 2.jpg" alt=""></div>
+                            <div>
+                                <p class="button-stock">INSTOCK</p>
+                            </div>
+                        </div>
+                        <div class="card-footer-main">
+                            <h3>Lorem ipsum dolor sit</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quidem quibusdam sequi un
+                            </p>
+                        </div>
+                        <div class="card-footer-footer">
+                            <a href="detalle.html">DETALLES</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-product" id="product_2">
+                    <div class="card-header">
+                        <div class="descuento-header">
+                            <h3>25% DESC</h3>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="body-card-img">
+                            <img src="img/mouse 1.png" alt="producto img">
+                        </div>
+                        <div class="body-card-action">
+                            <div><img src="img/icons/heart 2.png" alt="Agregar a la lista de deseos"></div>
+                            <div><img src="img/icons/img eye 2.png" alt="Ver detalles"></div>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="card-footer-head">
+                            <div><img src="img/icons/estrellas 2.jpg" alt=""></div>
+                            <div>
+                                <p class="button-stock">INSTOCK</p>
+                            </div>
+                        </div>
+                        <div class="card-footer-main">
+                            <h3>Lorem ipsum dolor sit</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quidem quibusdam sequi un
+                            </p>
+                        </div>
+                        <div class="card-footer-footer">
+                            <a href="detalle.html">DETALLES</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section class="container">
+        <div class="fabs">
+            <div class="chat">
+                <div class="chat-header">
+                    <p>Estoy aqui para ayudarte</p>
+                </div>
+                <div id="chat_converse" class="chat_converse">
+                    <div id="converse-contain">
+                        <span class="chat_msg_item chat_msg_item_admin">
+                            <div class="chat_avatar">
+                                <img src="../../img/icons/user-1.png" alt="">
+                            </div>
+                            Hola bienvenido a Informatica3D
+                        </span>
+                        <span class="chat_msg_item chat_msg_item_admin">
+                            <div class="chat_avatar">
+                                <img src="../../img/icons/user-1.png" alt="">
+                            </div>
+                            ¿Como puedo ayudarle?
+                        </span>
+                        <span class="chat_msg_item chat_msg_item_user">
+                            <div class="chat_avatar">
+                                <img src="../../img/icons/user.png" alt="">
+                            </div>
+                            escribe..
+                        </span>
+                        <span class="chat_msg_item chat_msg_item_user" id="campo-foto">
+                            <div class="chat_avatar">
+                                <img src="../../img/icons/user.png" alt="">
+                            </div>
+                            <div id="snapShot"></div>
+                        </span>
+                    </div>
+                    <div id="camBox" style="width:100%; height:100%;">
+
+                        <div class="revdivshowimg" style="top:20%; text-align:center; margin:0 auto;">
+
+                            <div id="camera" style="height:auto; text-align:center; margin:0 auto;"></div>
+                            <p>
+                                <input id="close" type="button" value="Close" />
+                                <input id="snap" type="button" value="Tomar Foto" onclick="takeSnapShot()"/>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="fab_field">
+                    <a id="fab_listen" class="fab-footer">
+                        <img src="../../img/icons/camera-to-take-photos.png" alt="photo" title="Video Conferencia">
+                    </a>
+                    <textarea id="chatSend" name="chat_message" placeholder="Escribe un mensaje"
+                        class="chat_field chat_message">
+
+                    </textarea>
+                    <a id="fab_send" class="fab-footer">
+                        <img src="../../img/icons/send-message.png" alt="send" title="Enviar Mensaje">
+                    </a>
+                </div>
+            </div>
+            <a id="prime" class="fab">
+                <img src="../../img/icons/live-chat 1.png" alt="chat" class="prime zmdi zmdi-plus">
+            </a>
+        </div>
+    </section>
+
+
+    <div class="footer-bg">
+        <footer class="footer container">
+            <div class="mapa">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3900.6366217415325!2d-86.22446165490635!3d12.136996681040737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sni!4v1652844718594!5m2!1ses!2sni"
+                    width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="bloque-footer">
+                <p class="bloque-footer__titulo">Comentar algo:</p>
+
+                <form class="formulario-footer">
+                    <input class="input-text" type="text" placeholder="Email:" required>
+                    <textarea class="input-text" placeholder="Comentario:" required></textarea>
+
+                    <input type="submit" class="btn-primary" value="Publicar">
+                </form>
+            </div>
+
+            <div class="bloque-footer">
+                <div class="bloque-oficina">
+                    <p class="bloque-footer__titulo">Nuestra Oficina</p>
+
+                    <div class="tel-email-dir">
+                        <img src="img/icons/icono-telefono.png" alt="Icono telefono footer">
+                        <p>+505 22-55-44-88</p>
+                    </div>
+
+                    <div class="tel-email-dir">
+                        <img src="img/icons/icono-email.png" alt="Icono email footer">
+                        <p>example@gmail.com</p>
+                    </div>
+
+                    <div class="tel-email-dir">
+                        <img src="img/icons/icono-localizacion.png" alt="Icono direccion footer">
+                        <p>62351 Haylee Flat Suite 160, Maggieton</p>
+                    </div>
+                </div>
+
+                <div class="bloque-redes">
+                    <p class="bloque-footer__titulo">Redes sociales</p>
+
+                    <div class="redes-footer">
+                        <a href="https://www.facebook.com/sevasaonline/"><img class="red-footer"
+                                src="img/icons/facebook.png" alt="Icono facebook"></a>
+                        <a href="https://www.instagram.com/sevasaonline/?hl=es"><img class="red-footer"
+                                src="img/icons/instagram.png" alt="Icono facebook"></a>
+                        <a href="https://twitter.com/amd"><img class="red-footer" src="img/icons/twitter.png"
+                                alt="Icono facebook"></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div class="copyright">
+            <p>Todos los derechos reservados&copy;</p>
+        </div>
+
+    </div>
+
+    <div id="modalLogin" class="modalLogin">
+        <div class="modalContenido">
+            <div class="div-logo">
+                <a href="#">
+                    <img src="img/Logo-soBig.png" alt="logo">
+                </a>
+            </div>
+            <form method="post">
+                <div class="txt_field">
+                    <input type="text" required>
+                    <span></span>
+                    <label>Nombre De Usuario</label>
+                </div>
+                <div class="txt_field">
+                    <input type="password" required>
+                    <span></span>
+                    <label>Contraseña</label>
+                </div>
+                <div class="recordMe">
+                    <label><input type="checkbox" id="cbox1" value="first_checkbox">Recuerdame</label>
+                </div>
+                <div class="pass">¿Olvidó Su Contraseña?</div>
+                <input type="submit" value="Iniciar Sesion">
+                <div class="signout_link"> <a href="#">Regresar</a>
+                </div>
+                <div class="signup_link">
+                    ¿No posee una cuenta? <a href="#modalRegistro">Registrarse</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="modalRegistro" class="modalLogin">
+        <div class="modalContenido">
+            <div class="div-logo">
+                <a href="#">
+                    <img src="img/Logo-soBig.png" alt="logo">
+                </a>
+            </div>
+            <form method="post">
+                <div class="nombreCompletoRegistro">
+                    <div class="txt_field">
+                        <input type="text" required>
+                        <span></span>
+                        <label>Nombre</label>
+                    </div>
+                    <div class="txt_field">
+                        <input type="text" required>
+                        <span></span>
+                        <label>Apellido</label>
+                    </div>
+                </div>
+
+                <div class="txt_field">
+                    <input type="text" required>
+                    <span></span>
+                    <label>Nombre de Usuario</label>
+                </div>
+
+                <div class="txt_field">
+                    <input type="password" required>
+                    <span></span>
+                    <label>Contraseña</label>
+                </div>
+                <div class="txt_field">
+                    <input type="password" required>
+                    <span></span>
+                    <label>Confirmar Contraseña</label>
+                </div>
+                <div class="txt_field">
+                    <input type="text" required>
+                    <span></span>
+                    <label>Direccion</label>
+                </div>
+                <div class="txt_field">
+                    <input type="tel" required>
+                    <span></span>
+                    <label>Télefono</label>
+                </div>
+                <input type="submit" value="Registrarse">
+                <div class="signout_link"> <a href="#">Regresar</a>
+                </div>
+                <div class="signup_link">
+                    ¿Ya tienes una cuenta? <a href="#modalLogin">Iniciar Sesión</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- 
+    MOdal de la oferta de steven
+    <div id="modalOferta" class="modalOferta">
+        <div class="modalContenido">
+            <h2 class="subtitulo">Oferta Por tiempo limitado</h2>
+            <div>
+
+                <div class="div-logo">
+                    <a href="detalle.html">
+                        <img src="img/ryzen-complte.png" alt="logo">
+
+                    </a>
+                </div>
+
+
+                <a class="reloj" id="clock" href="detalle.html"></a>
+
+                <div class="signout_link cerrarModal"> <a href="#">Regresar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+        #endregion -->
+
+    <script type="text/javascript" src=" https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.25/webcam.js ">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="js/carrusel.js"></script>
+    <script src="js/header-dropdown.js"></script>
+    <script src="js/webcam.js"></script>
+    <script src="/js/closeModal.js"></script>
+</body>
+
+</html>

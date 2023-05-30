@@ -1,0 +1,206 @@
+#carrusel {
+    width: 100%;
+    overflow: hidden;
+    height: 500px;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.arrow-contain {
+    /*Diseno*/
+    background-color: rgba(0, 0, 0, 0.24);
+    padding: 8px 10px;
+    border-radius: 5px;
+    transition: all .3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow-contain img {
+    width: 80%;
+}
+
+#carrusel .left-arrow {
+    position: absolute;
+    left: 10px;
+    z-index: 4;
+    top: 50%;
+    margin-top: -9px;
+}
+
+#carrusel .right-arrow {
+    position: absolute;
+    right: 10px;
+    z-index: 4;
+    top: 50%;
+    margin-top: -9px;
+}
+
+#carrusel .left-arrow:hover,
+#carrusel .right-arrow:hover {
+    background-color: rgba(0, 0, 0, 0.377);
+}
+
+.carrusel {
+    width: 4000px;
+    left: 0px;
+    position: absolute;
+    z-index: 0;
+    text-align: center;
+    display: flex;
+}
+
+.carrusel>div {
+    float: left;
+    width: 265px;
+    height: 460px;
+    text-align: center;
+    transition: all .3s ease-in-out;
+    z-index: 3;
+}
+
+.carrusel>div:hover {
+    transform: scale(1.05);
+}
+
+.carrusel img {
+    cursor: pointer;
+}
+
+
+/*CARDS*/
+
+.card-product {
+    width: 265px;
+    height: 460px;
+    background-color: var(--blanco);
+    border-radius: 5px;
+    display: flex;
+    margin: 0px 5px;
+    flex-direction: column;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.19);
+    transition: all .3s ease-in-out;
+    float: left;
+    text-align: center;
+    transition: all .3s ease-in-out;
+    z-index: 0;
+}
+
+.card-product:hover {
+    transform: scale(1.05);
+}
+
+.card-header {
+    height: 10%;
+}
+
+.card-body {
+    height: 40%;
+    display: grid;
+    grid-template-columns: 4fr .8fr;
+}
+
+.card-footer {
+    height: 50%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.descuento-header {
+    background: var(--icon-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.07);
+    border-radius: 4px 0px 10px;
+    width: 129px;
+    padding-left: 20px;
+    height: 36px;
+    color: var(--blanco);
+    display: flex;
+    align-items: center;
+}
+
+.body-card-img {
+    display: flex;
+    justify-content: center;
+}
+
+.body-card-img img {
+    margin-left: 35px;
+}
+
+.body-card-action {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.body-card-action div {
+    width: 40px;
+    height: 40px;
+    background: rgba(26, 26, 26, 0.29);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin: 0px 0px 0px -12px;
+    transition: all .3s ease-in-out;
+}
+
+.body-card-action div:hover {
+    background-color: var(--icon-color);
+}
+
+.body-card-action div img {
+    width: 20px;
+}
+
+.card-footer-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-footer-main {
+    text-align: justify;
+}
+
+.card-footer-main h3 {
+    color: var(--font);
+}
+
+.card-footer-main p {
+    color: var(--line);
+}
+
+.card-footer-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-footer-footer a {
+    text-decoration: none;
+    color: var(--blanco);
+    text-transform: uppercase;
+    background-color: var(--icon-color);
+    padding: 10px 80px;
+    border-radius: 5px;
+    transition: all .3s ease-in-out;
+}
+
+.card-footer-footer a:hover {
+    background-color: var(---barra-nav);
+}
+
+.button-stock {
+    background-color: var(--verde);
+    color: var(--blanco);
+    font-size: 13px;
+    padding: 2px 9px;
+    border-radius: 5px;
+}
