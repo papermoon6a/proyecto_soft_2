@@ -6,7 +6,18 @@
     <title>INFORMATICA3D</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+    
+    
+    <link rel="stylesheet" href="styleesh.css">
     <script src="https://kit.fontawesome.com/76ae67c2d9.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+	   <!--google material icon--> 
+     <link href="https://fonts.googleapis.com/css2?family=Material+Icons"rel="stylesheet">
+     
     <style>
         .sidebar {
             position: fixed;
@@ -134,48 +145,127 @@
                 <h1 class="h2">Cliente</h1>
 
                 <div class="row">
-                    <div class="col-12 col-xl-8 mb-4 mb-lg-0">
-                        <div class="card">
-                            <h5 class="card-header">Latest transactions</h5>
-                            <div class="card-body">
-                                <div class="table-responsive">
-                                    <table class="table">
-                                        <thead>
-                                          <tr>
-                                            <th scope="col">Order</th>
-                                            <th scope="col">Product</th>
-                                            <th scope="col">Customer</th>
-                                            <th scope="col">Total</th>
-                                            <th scope="col">Date</th>
-                                            <th scope="col"></th>
-                                          </tr>
-                                        </thead>
-                                        <tbody>
-                                          <tr>
-                                            <th scope="row">17371705</th>
-                                            <td>Volt Premium Bootstrap 5 Dashboard</td>
-                                            <td>johndoe@gmail.com</td>
-                                            <td>€61.11</td>
-                                            <td>Aug 31 2020</td>
-                                            <td><a href="#" class="btn btn-sm btn-primary">View</a></td>
-                                          </tr>
-                                          <tr>
-                                            <th scope="row">17370540</th>
-                                            <td>Pixel Pro Premium Bootstrap UI Kit</td>
-                                            <td>jacob.monroe@company.com</td>
-                                            <td>$153.11</td>
-                                            <td>Aug 28 2020</td>
-                                            <td><a href="#" class="btn btn-sm btn-primary">View</a></td>
-                                          </tr>
+                 <div class="col-md-12">
+                  <div class="table-wrapper">
+                    
+                  
+                  
+                  <table class="table table-striped table-hover table-bordered">
+                     <thead>
+                      <tr>
+                    <th><span class="custom-checkbox">
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Nombre de Usuario</th>
+                    <th>Contraseña</th>
+                    <th>Direccion</th>
+                    <th>Telefono</th>
+                    <th>Actions</th>
+                    </tr>
+                   </thead>
+                   
+                   <tbody>
+                       <tr>
+                    <th><span class="custom-checkbox">
+                    <th>Thomas</th>
+                    <th>Hardy</th>
+                    <th>Guacamole12</th>
+                    <th style="color: blue;">Encryptado</th>
+                    <th>Guacamole12@gmail.com</th>
+                    <th>88885555</th>
 
+                    <th>
+                       <a href="#editEmployeeModal" class="edit" data-toggle="modal">
+                      <i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i>
+                      </a>
+                      <a href="#deleteEmployeeModal" class="delete" data-toggle="modal">
+                      <i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i>
+                      </a>
+                    </th>
+                    </tr>
+                    
+                    
+                     <tr>
+                      <th><span class="custom-checkbox">
+                        <th>Thomas</th>
+                        <th>Hardy</th>
+                        <th>Guacamole12</th>
+                        <th style="color: blue;">Encryptado</th>
+                        <th>Guacamole12@gmail.com</th>
+                        <th>88885555</th>
+                    <th>
+                       <a href="#editEmployeeModal" class="edit" data-toggle="modal">
+                      <i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i>
+                      </a>
+                      <a href="#deleteEmployeeModal" class="delete" data-toggle="modal">
+                      <i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i>
+                      </a>
+                    </th>
+                    </tr>
+                    
+                    
+                    <tr>
+                      <th><span class="custom-checkbox">
+                        <th>Thomas</th>
+                        <th>Hardy</th>
+                        <th>Guacamole12</th>
+                        <th style="color: blue;">Encryptado</th>
+                        <th>Guacamole12@gmail.com</th>
+                        <th>88885555</th>
+                    <th>
+                       <a href="#edit" class="edit" data-toggle="modal">
+                      <i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i>
+                      </a>
+                      <a href="#deleteEmployeeModal" class="delete" data-toggle="modal">
+                      <i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i>
+                      </a>
+                    </th>
+                    </tr>
+                    
+                     <tr>
+                      <th><span class="custom-checkbox">
+                        <th>Thomas</th>
+                        <th>Hardy</th>
+                        <th>Guacamole12</th>
+                        <th style="color: blue;">Encryptado</th>
+                        <th>Guacamole12@gmail.com</th>
+                        <th>88885555</th>
+                    <th>
+                       <a href="#editEmployeeModal" class="edit" data-toggle="modal">
+                      <i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i>
+                      </a>
+                      <a href="#deleteEmployeeModal" class="delete" data-toggle="modal">
+                      <i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i>
+                      </a>
+                    </th>
+                    </tr>
+                    
+                     <tr>
 
-                                        </tbody>
-                                      </table>
-                                </div>
-                                <a href="#" class="btn btn-block btn-light">View all</a>
-                            </div>
-                        </div>
-                    </div>
+                      <th><span class="custom-checkbox">
+                        <th>Thomas</th>
+                        <th>Hardy</th>
+                        <th>Guacamole12</th>
+                        <th style="color: blue;">Encryptado</th>
+                        <th>Guacamole12@gmail.com</th>
+                        <th>88885555</th>
+                    <th>
+                       <a href="#editEmployeeModal" class="edit" data-toggle="modal">
+                      <i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i>
+                      </a>
+                      <a href="#deleteEmployeeModal" class="delete" data-toggle="modal">
+                      <i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i>
+                      </a>
+                    </th>
+                    </tr>
+                    
+                   </tbody>
+
+                  </table>
+
+                  
+                  </div>
+               </div>
 
                 </div>
                 <footer class="pt-5 d-flex justify-content-between">
@@ -200,16 +290,6 @@
     <script src="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
     <!-- Github buttons -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
-    <script>
-        new Chartist.Line('#traffic-chart', {
-            labels: ['January', 'Februrary', 'March', 'April', 'May', 'June'],
-            series: [
-                [23000, 25000, 19000, 34000, 56000, 64000]
-            ]
-            }, {
-            low: 0,
-            showArea: true
-        });
-    </script>
+
 </body>
 </html>
