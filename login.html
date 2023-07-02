@@ -43,7 +43,21 @@
                     <label><input type="checkbox" id="cbox1" value="first_checkbox">Recuerdame</label>
                 </div>
                 <div class="pass">¿Olvidó Su Contraseña?</div>
-                <input type="submit" value="Iniciar Sesion">
+                <input type="submit" value="Iniciar Sesion" onclick="myFunction()">
+                <script> function myFunction(){
+                    var a=document.getElementById("text_a").value;
+                    if (a=="adm")
+                      {
+                          window.close();
+                        window.open("dashboard/dashboard.html");
+                      }
+                    else
+                      {
+                        window.close();
+                        window.open("index.html");
+                      }
+                    }
+                    </script>
                 <div class="signout_link"> <a href="index.html">Regresar</a>
                 </div>
                 <div class="signup_link">
