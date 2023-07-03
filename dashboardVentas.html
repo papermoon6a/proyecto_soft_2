@@ -119,13 +119,6 @@
                       </a>
                     </li>
 
-                    <li class="nav-item">
-                      <a class="nav-link" href="dashboardReportes.html">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bar-chart-2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
-                        <span class="ml-2">Reportes</span>
-                      </a>
-                    </li>
-
                   </ul>
             </div>
         </nav>
@@ -152,10 +145,10 @@
                       <th>Tipo Comprobante</th>
                       <th>Numero Comprobante</th>
                       <th>Serie de Comprobante</th>
-                      <th>Fecha Hora</th>
+                      <th>Fecha / Hora</th>
                       <th>Impuesto</th>
                       <th>Total</th>
-                     <th></th>
+                     <th>Action</th>
                      </tr>
                     </thead>
                     
@@ -163,11 +156,12 @@
                         <tr>
                      <th><span class="custom-checkbox">
                      <th>2212</th>
-                     <th>Ryzen 5 5600g</th>
-                     <th>El procesador AMD Ryzen™ 5 5600G incluye seis núcleos de CPU, una velocidad de reloj base de 3,9 GHz y siete núcleos de GPU.</th>
-                     <th>12000C$</th>
-                     <th>Procesador</th>
-                     <th>5</th>
+                     <th>Pago</th>
+                     <th>4924294921041DSA</th>
+                     <th>5432SD</th>
+                     <th>15 Junio 2023 / 02:03:21</th>
+                     <th>200</th>
+                     <th></th>
                      
  
                      <th>
@@ -179,87 +173,7 @@
                        </a>
                      </th>
                      </tr>
-                     
-                     
-                      <tr>
-                       <th><span class="custom-checkbox">
-                         <th>421421</th>
-                         <th>Hardy</th>
-                         <th>Guacamole12</th>
-                         <th style="color: blue;">Encryptado</th>
-                         <th>Guacamole12@gmail.com</th>
-                         <th>5</th>
-                    
-                     <th>
-                        <a href="#editEmployeeModal" class="edit" data-toggle="modal">
-                       <i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i>
-                       </a>
-                       <a href="#deleteEmployeeModal" class="delete" data-toggle="modal">
-                       <i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i>
-                       </a>
-                     </th>
-                     </tr>
-                     
-                     
-                     <tr>
-                       <th><span class="custom-checkbox">
-                         <th>421412de</th>
-                         <th>Hardy</th>
-                         <th>Guacamole12</th>
-                         <th style="color: blue;">Encryptado</th>
-                         <th>Guacamole12@gmail.com</th>
-                         <th>8</th>
-                       
-                     <th>
-                        <a href="#edit" class="edit" data-toggle="modal">
-                       <i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i>
-                       </a>
-                       <a href="#deleteEmployeeModal" class="delete" data-toggle="modal">
-                       <i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i>
-                       </a>
-                     </th>
-                     </tr>
-                     
-                      <tr>
-                       <th><span class="custom-checkbox">
-                         <th>T21124</th>
-                         <th>Hardy</th>
-                         <th>Guacamole12</th>
-                         <th style="color: blue;">Encryptado</th>
-                         <th>Guacamole12@gmail.com</th>
-                         <th>8</th>
-                        
-                     <th>
-                        <a href="#editEmployeeModal" class="edit" data-toggle="modal">
-                       <i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i>
-                       </a>
-                       <a href="#deleteEmployeeModal" class="delete" data-toggle="modal">
-                       <i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i>
-                       </a>
-                     </th>
-                     </tr>
-                     
-                      <tr>
- 
-                       <th><span class="custom-checkbox">
-                         
-                         <th>412412s</th>
-                         <th>Hardy</th>
-                         <th>Guacamole12</th>
-                         <th style="color: blue;">Encryptado</th>
-                         <th>Guacamole12@gmail.com</th>
-                         <th>8</th>
-                       
-                     <th>
-                        <a href="#editEmployeeModal" class="edit" data-toggle="modal">
-                       <i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i>
-                       </a>
-                       <a href="#deleteEmployeeModal" class="delete" data-toggle="modal">
-                       <i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i>
-                       </a>
-                     </th>
-                     </tr>
-                     
+
                     </tbody>
  
                    </table>
@@ -271,7 +185,7 @@
                  <div class="col-sm-6 p-0 flex justify-content-lg-end justify-content-center">
                    <a href="#addEmployeeModal" class="btn btn-success" data-toggle="modal">
                    <i class="material-icons">&#xE147;</i>
-                   <span>Agregar Nuevo Producto</span>
+                   <span>Agregar Nueva Venta</span>
                    </a>
                    <a href="#deleteEmployeeModal" class="btn btn-danger" data-toggle="modal">
                    <i class="material-icons">&#xE15C;</i>
@@ -297,18 +211,32 @@
                      <label>Name</label>
                    <input type="text" class="form-control" required>
                  </div>
+
                  <div class="form-group">
-                     <label>Email</label>
-                   <input type="emil" class="form-control" required>
-                 </div>
-                 <div class="form-group">
-                     <label>Address</label>
-                   <textarea class="form-control" required></textarea>
-                 </div>
-                 <div class="form-group">
-                     <label>Phone</label>
-                   <input type="text" class="form-control" required>
-                 </div>
+                  <label>Tipo de Comprobante</label>
+                <input type="text" class="form-control" required>
+              </div>
+
+              <div class="form-group">
+                  <label>Numero de Comprobante</label>
+                <input type="text" class="form-control" required>
+              </div>
+
+              <div class="form-group">
+                  <label>Serie de Comprobante</label>
+                <input type="text" class="form-control" required>
+              </div>
+
+              <div class="form-group">
+                <label>Fecha / Hora</label>
+              <input type="text" class="form-control" required>
+            </div>
+
+            <div class="form-group">
+              <label>Total</label>
+            <input type="text" class="form-control" required>
+          </div>
+
                    </div>
                    <div class="modal-footer">
                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
