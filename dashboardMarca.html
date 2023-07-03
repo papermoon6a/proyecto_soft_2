@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
     <script src="https://kit.fontawesome.com/76ae67c2d9.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="styleesh.css">
+
     <script src="https://kit.fontawesome.com/76ae67c2d9.js" crossorigin="anonymous"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -105,20 +105,15 @@
                         <span class="ml-2">Cliente</span>
                       </a>
                     </li>
+
                     <li class="nav-item">
-                      <a class="nav-link" href="dashboardCatalogo.html">
-                        <i class="fa-solid fa-book"></i>
-                        <span class="ml-2">Catalogo</span>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="dashboardMarca.html">
+                      <a class="nav-link  active" href="dashboardMarca.html">
                         <i class="fa fa-bag-shopping"></i>
                         <span class="ml-2">Marca</span>
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link  active" href="dashboardVentas.html">
+                      <a class="nav-link" href="dashboardVentas.html">
                         <i class="fa fa-store"></i>
                         <span class="ml-2">Ventas</span>
                       </a>
@@ -138,54 +133,159 @@
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="#">Inicio</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Vista Ventas</li>
+                        <li class="breadcrumb-item active" aria-current="page">Vista Marca</li>
                     </ol>
                 </nav>
-                <h1 class="h2">Ventas</h1>
-
+                <h1 class="h2">Marca</h1>
                 <div class="row">
-                    <div class="col-12 col-xl-8 mb-4 mb-lg-0">
-                        <div class="card">
-                            <h5 class="card-header">Latest transactions</h5>
-                            <div class="card-body">
-                                <div class="table-responsive">
-                                    <table class="table">
-                                        <thead>
-                                          <tr>
-                                            <th scope="col">Order</th>
-                                            <th scope="col">Product</th>
-                                            <th scope="col">Customer</th>
-                                            <th scope="col">Total</th>
-                                            <th scope="col">Date</th>
-                                            <th scope="col"></th>
-                                          </tr>
-                                        </thead>
-                                        <tbody>
-                                          <tr>
-                                            <th scope="row">17371705</th>
-                                            <td>Volt Premium Bootstrap 5 Dashboard</td>
-                                            <td>johndoe@gmail.com</td>
-                                            <td>€61.11</td>
-                                            <td>Aug 31 2020</td>
-                                            <td><a href="#" class="btn btn-sm btn-primary">View</a></td>
-                                          </tr>
-                                          <tr>
-                                            <th scope="row">17370540</th>
-                                            <td>Pixel Pro Premium Bootstrap UI Kit</td>
-                                            <td>jacob.monroe@company.com</td>
-                                            <td>$153.11</td>
-                                            <td>Aug 28 2020</td>
-                                            <td><a href="#" class="btn btn-sm btn-primary">View</a></td>
-                                          </tr>
+                  <div class="col-md-12">
+                   <div class="table-wrapper">
+                     
+                   
+                   
+                   <table class="table table-striped table-hover table-bordered">
+                      <thead>
+                       <tr>
+                     <th><span class="custom-checkbox">
+                     <th>Codigo</th>
+                     <th>Nombre de la Marca</th>
+                     <th>Actions</th>
+                     </tr>
+                    </thead>
+                    
+                    <tbody>
+                        <tr>
+                     <th><span class="custom-checkbox">
+                     <th>2212</th>
+                     <th>Ryzen 5 5600g</th>
+
+                     <th>
+                        <a href="#editEmployeeModal" class="edit" data-toggle="modal">
+                       <i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i>
+                       </a>
+                       <a href="#deleteEmployeeModal" class="delete" data-toggle="modal">
+                       <i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i>
+                       </a>
+                     </th>
+                     </tr>
+                     
+                     
+                      <tr>
+                       <th><span class="custom-checkbox">
+                         <th>421421</th>
+                         <th>Hardy</th>
+
+                    
+                     <th>
+                        <a href="#editEmployeeModal" class="edit" data-toggle="modal">
+                       <i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i>
+                       </a>
+                       <a href="#deleteEmployeeModal" class="delete" data-toggle="modal">
+                       <i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i>
+                       </a>
+                     </th>
+                     </tr>
+                     
+                     
+                     <tr>
+                       <th><span class="custom-checkbox">
+                         <th>421412de</th>
+                         <th>Hardy</th>
+
+                       
+                     <th>
+                        <a href="#edit" class="edit" data-toggle="modal">
+                       <i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i>
+                       </a>
+                       <a href="#deleteEmployeeModal" class="delete" data-toggle="modal">
+                       <i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i>
+                       </a>
+                     </th>
+                     </tr>
+                     
+                      <tr>
+                       <th><span class="custom-checkbox">
+                         <th>T21124</th>
+                         <th>Hardy</th>
+
+                        
+                     <th>
+                        <a href="#editEmployeeModal" class="edit" data-toggle="modal">
+                       <i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i>
+                       </a>
+                       <a href="#deleteEmployeeModal" class="delete" data-toggle="modal">
+                       <i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i>
+                       </a>
+                     </th>
+                     </tr>
+                     
+                      <tr>
+ 
+                       <th><span class="custom-checkbox">
+                         
+                         <th>412412s</th>
+                         <th>Hardy</th>
+   
+                       
+                     <th>
+                        <a href="#editEmployeeModal" class="edit" data-toggle="modal">
+                       <i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i>
+                       </a>
+                       <a href="#deleteEmployeeModal" class="delete" data-toggle="modal">
+                       <i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i>
+                       </a>
+                     </th>
+                     </tr>
+                     
+                    </tbody>
+ 
+                   </table>
+                   </div>
+                </div>
+ 
+                <div class="table-title">
+                 <div class="row">
+                 <div class="col-sm-6 p-0 flex justify-content-lg-end justify-content-center">
+                   <a href="#addEmployeeModal" class="btn btn-success" data-toggle="modal">
+                   <i class="material-icons">&#xE147;</i>
+                   <span>Agregar Nueva Marca</span>
+                   </a>
+                   <a href="#deleteEmployeeModal" class="btn btn-danger" data-toggle="modal">
+                   <i class="material-icons">&#xE15C;</i>
+                   <span>Eliminar</span>
+                   </a>
+                 </div>
+                 </div>
+               </div>
+             </div>
+                
+             
+
+            <div class="modal fade" tabindex="-1" id="addEmployeeModal" role="dialog">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">Marca</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="form-group">
+                    <label>Nombre de la Marca</label>
+                  <input type="text" class="form-control" required>
+                </div>
 
 
-                                        </tbody>
-                                      </table>
-                                </div>
-                                <a href="#" class="btn btn-block btn-light">View all</a>
-                            </div>
-                        </div>
-                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-success">Agregar</button>
+                  </div>
+                </div>
+              </div
+                <!-- <a href="#" class="btn btn-block btn-light">View all</a> -->
+   
 
                 </div>
                 <footer class="pt-5 d-flex justify-content-between">
